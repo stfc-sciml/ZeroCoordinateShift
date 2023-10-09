@@ -1,0 +1,40 @@
+Warning: 500 points required, but 506 points sampled.
+Compiling model...
+'compile' took 0.000375 s
+
+Training model...
+
+Step      Train loss                        Test loss                         Test metric
+0         [1.06e+00, 1.85e-01, 6.98e-02]    [1.03e+00, 2.87e-01, 9.51e-02]    []  
+1000      [8.35e-02, 3.94e-02, 1.16e-02]    [7.29e-02, 5.25e-02, 1.51e-02]    []  
+2000      [4.76e-02, 3.96e-02, 1.08e-02]    [3.92e-02, 4.24e-02, 1.15e-02]    []  
+3000      [3.35e-02, 2.16e-02, 6.56e-03]    [2.46e-02, 2.28e-02, 6.17e-03]    []  
+4000      [2.26e-02, 1.04e-02, 3.37e-03]    [2.06e-02, 1.36e-02, 3.41e-03]    []  
+5000      [1.84e-02, 8.75e-03, 3.06e-03]    [1.73e-02, 9.01e-03, 3.01e-03]    []  
+6000      [2.10e-02, 6.36e-03, 2.96e-03]    [1.54e-02, 5.95e-03, 2.82e-03]    []  
+7000      [1.58e-02, 7.07e-03, 3.54e-03]    [1.43e-02, 5.61e-03, 3.54e-03]    []  
+8000      [1.23e-02, 8.06e-03, 5.10e-03]    [1.27e-02, 6.28e-03, 4.25e-03]    []  
+9000      [7.46e-03, 3.39e-03, 2.27e-03]    [8.71e-03, 3.65e-03, 2.82e-03]    []  
+10000     [7.42e-03, 2.05e-03, 1.42e-03]    [7.92e-03, 1.99e-03, 1.45e-03]    []  
+
+Best model at step 10000:
+  train loss: 1.09e-02
+  test loss: 1.14e-02
+  test metric: []
+
+'train' took 384.032740 s
+
+argv: main.py --unaligned --seed 5
+== ERRORS ==
+* Relative data error: 0.07768711505785288
+* Absolute PDE error: 0.00791487842798233
+== GPU MEMORY ==
+* Peak during training: 1463.458816 MB
+* PDE graph during validation: 967.24992 MB
+== WALL TIME ==
+* Total: 247.7402949333191
+* Prep inputs: 53.96851873397827
+* Forward: 27.768919706344604
+* Losses: 39.90553689002991
+* Backprop: 126.09731960296631
+* PDE function: 33.9959557056427

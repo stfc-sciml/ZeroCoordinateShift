@@ -1,0 +1,5 @@
+{
+  "seeds": [1, 2, 3, 4, 5],
+  "methods": ["aligned_baseline", "aligned_ZCS"],
+  "line_argv": 18
+}
