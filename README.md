@@ -2,8 +2,7 @@
  
 This is the repository for the following paper: 
 
-*Kuangdai Leng and Jeyan Thiyagalingam. 
-Zero Coordinate Shift: Whetted Automatic Differentiation for Physics-informed Operator Learning. 
+*Anonymous. Zero Coordinate Shift: Whetted Automatic Differentiation for Physics-informed Operator Learning. 
 2023.*
 
 Abstract:
