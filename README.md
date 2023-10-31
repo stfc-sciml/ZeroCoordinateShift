@@ -2,7 +2,7 @@
  
 This is the repository for the following paper: 
 
-*Anonymous. Zero Coordinate Shift: Whetted Automatic Differentiation for Physics-informed Operator Learning. 
+*Kuangdai Leng, Mallikarjun Shankar, Jeyan Thiyagalingam. Zero Coordinate Shift: Whetted Automatic Differentiation for Physics-informed Operator Learning. 
 2023.*
 
 Abstract:
@@ -33,8 +33,3 @@ Use the following command to print the metrics
 ```bash
 python metrics.py burgers
 ```
-
-## Acknowledgement
-This work is supported by the EPSRC grant, Blueprinting for AI for Science
-at Exascale (BASE-II, EP/X019918/1), which is Phase II of the Benchmarking
-for AI for Science at Exascale (BASE) grant.
