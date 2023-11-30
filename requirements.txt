@@ -1,5 +1,5 @@
+deepxde==1.9.3
 torch
-deepxde
 numpy
 scipy
 matplotlib

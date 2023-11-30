@@ -23,6 +23,9 @@ The main dependencies are DeepXDE and PyTorch, which can be installed by
 pip install -r requirements.txt
 ```
 
+**NOTE**: There are some backward compatibility issues between DeepXDE 1.9 and 1.10. 
+We set the version as 1.9.3 in `requirements.txt`.
+
 ## Training
 Inside each example folder (`diffusion_reaction`, `burgers`, `KL_plates`), 
 run the following command to see the arguments for training:
