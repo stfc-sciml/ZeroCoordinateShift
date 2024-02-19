@@ -51,7 +51,8 @@ if __name__ == '__main__':
     epochs = {
         'diffusion_reaction': 10000,
         'burgers': 1000,
-        'KL_plates': 200
+        'KL_plates': 200,
+        'stokes': 100
     }
     pde = args.directory.replace('/', '')
     methods_latex = {

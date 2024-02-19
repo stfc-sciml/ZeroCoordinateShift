@@ -1,0 +1,30 @@
+Warning: 500 points required, but 529 points sampled.
+Compiling model...
+'compile' took 0.418393 s
+
+Training model...
+
+Step      Train loss                                  Test loss                                   Test metric
+0         [5.61e-02, 4.21e-01, 2.37e-02, 3.48e-02]    [5.74e-02, 6.23e-01, 1.23e-02, 3.97e-02]    []  
+100       [3.86e-04, 9.64e-04, 5.56e-03, 1.97e-02]    [3.16e-04, 1.17e-03, 2.40e-03, 2.00e-02]    []  
+
+Best model at step 100:
+  train loss: 2.66e-02
+  test loss: 2.39e-02
+  test metric: []
+
+'train' took 15.392674 s
+
+argv: main.py --epochs=100 --ZCS --seed 2
+== ERRORS ==
+* Relative data error: 0.8402343185015881
+== GPU MEMORY ==
+* Peak during training: 3304.741888 MB
+* PDE graph during validation: 1991.625216 MB
+== WALL TIME ==
+* Total: 14.694514989852905
+* Prep inputs: 0.13565659523010254
+* Forward: 0.3331937789916992
+* Losses: 8.194320678710938
+* Backprop: 6.031343936920166
+* PDE function: 8.040525436401367

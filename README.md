@@ -2,7 +2,8 @@
 **This repository is linked to the paper, with many features unnecessary for applications (
 such as GPU memory and time profiling and reproducible experiments). 
 If you want to use ZCS (based on DeepXDE) for your own applications, 
-please follow this repository: https://github.com/stfc-sciml/DeepXDE-ZCS.**
+please directly use [the latest DeepXDE](https://github.com/lululxvi/deepxde) where ZCS has been built in.**
+
 
 # ZeroCoordinateShift
  
@@ -13,7 +14,7 @@ This is the repository for the following paper:
 
 Abstract:
 Automatic differentiation (AD) is a critical step in physics-informed machine learning, required for computing the high-order derivatives of network output w.r.t. coordinates of collocation points. In this paper, we present a novel and lightweight algorithm to conduct AD for physics-informed operator learning, which we call the trick of Zero Coordinate Shift (ZCS). Instead of making all sampled coordinates as leaf variables, ZCS introduces only one scalar-valued leaf variable for each spatial or temporal dimension, simplifying the wanted derivatives from "many-roots-many-leaves" to "one-root-many-leaves" whereby reverse-mode AD becomes directly utilisable. It has led to an outstanding performance leap by avoiding the duplication of the computational graph along the dimension of functions (physical parameters). ZCS is easy to implement with current deep learning libraries; our own implementation is achieved by extending the DeepXDE package. We carry out a comprehensive benchmark analysis and several case studies, training physics-informed DeepONets to solve partial differential equations (PDEs) without data. The results show that ZCS has persistently reduced GPU memory consumption and wall time for training by an order of magnitude, and such reduction factor scales with the number of functions. As a low-level optimisation technique, ZCS imposes no restrictions on data, physics (PDE) or network architecture and does not compromise training results from any aspect. 
-![image](figs/KL-pie.png)
+![image](figs/pie.png)
 
 
 ## Installation

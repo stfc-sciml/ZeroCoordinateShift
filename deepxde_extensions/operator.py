@@ -258,11 +258,13 @@ class PDEOperatorCartesianProdZCS(dde.data.PDEOperatorCartesianProd):
         # BC
         for i, bc in enumerate(self.pde.bcs):
             beg, end = bcs_start[i], bcs_start[i + 1]
+            if bkd.backend.ndim(outputs) == 2:
+                # add component dim for CollectiveDirichletBC and CollectiveIC
+                outputs = outputs[:, :, None]
             error = bc.error(
                 self.train_x[1],
                 inputs[1],
-                # add component dim for CollectiveDirichletBC and CollectiveIC
-                outputs[:, :, None],
+                outputs,
                 beg,
                 end,
                 aux_var=model.net.auxiliary_vars,
@@ -296,6 +298,17 @@ class CollectiveDirichletBC(dde.icbc.DirichletBC):
     def error(self, X, inputs, outputs, beg, end, aux_var=None):
         values = self.func(X, beg, end, aux_var)
         return outputs[:, beg:end, self.component:self.component + 1] - values
+
+
+class CollectiveDirichletBC2(dde.icbc.DirichletBC):
+    """ derived DirichletBC that supports collective computation """
+
+    def __init__(self, geom, func, on_boundary, component=0):
+        super().__init__(geom, func, on_boundary, component)
+
+    def error(self, X, inputs, outputs, beg, end, aux_var=None):
+        values = self.func(X, beg, end, aux_var.t())
+        return outputs[:, beg:end, self.component] - values
 
 
 class CollectiveIC(dde.icbc.IC):
