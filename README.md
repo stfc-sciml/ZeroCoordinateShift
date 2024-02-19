@@ -1,9 +1,10 @@
-#### NOTE
-**This repository is linked to the paper, with many features unnecessary for applications (
+## IMPORTANT NOTE
+**This repository is strongly associated with the ZCS paper, with many features unnecessary for applications (
 such as GPU memory and time profiling and reproducible experiments). 
 If you want to use ZCS (based on DeepXDE) for your own applications, 
 please directly use [the latest DeepXDE](https://github.com/lululxvi/deepxde) where ZCS has been built in.**
 
+---
 
 # ZeroCoordinateShift
  
